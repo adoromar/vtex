@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head" />
+    <link href="/arquivos/adoromar-institucional.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header" />
+        <main class="e-content">
+
+            <section class="e-container e-banner">
+                <div class="e-center-content">
+                    <vtex:contentPlaceHolder id="Banner-Cuidado" />
+                </div>
+            </section>
+
+            <section class="e-container e-manter">
+                <div class="e-center-content">
+                    <vtex:contentPlaceHolder id="Banner-Manter" />
+                </div>
+            </section>
+
+            <section class="e-container e-cuidados">
+                <div class="e-center-content">
+                    <vtex:contentPlaceHolder id="Texto-Cuidados" />
+                </div>
+            </section>            
+
+        </main>
+        <vtex:template id="AdoroMar-Footer" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts" />
+    <script type="text/javascript" src="/arquivos/adoromar-institucional.js"></script>
+</body>
+
+</html>

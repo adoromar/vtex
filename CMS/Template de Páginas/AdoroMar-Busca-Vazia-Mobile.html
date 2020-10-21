@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head-Mobile" />
+    <link href="/arquivos/adoromar-busca-vazia-mobile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header-Mobile" />
+        <main class="e-content">
+
+            <section class="e-not-found">
+                <vtex:contentPlaceHolder id="Busca-Vazia-Banner" />
+                <div class="e-center-content">
+                    <h2>Por favor busque novamente</h2>
+                    <form class="e-form">
+                        <input type="text" placeholder="" class="e-therm" />
+                        <input type="submit" class="e-submit" />
+                        <span class="e-icon-search"></span>
+                    </form>
+                </div>
+            </section>
+
+            <section class="e-segment-buy">
+                <div class="e-center-content">
+                    <header class="e-section-header">
+                        <h2>Ou se preferir,<br />navegue por segmento</h2>
+                    </header>
+                    <nav class="e-nav">
+                        <ul>
+                            <li>
+                                <a href="/moda-praia/Calcinha%20Lacinho?PS=12&amp;map=c,specificationFilter_37">
+                                    <span class="e-icon-lacinho"></span>
+                                    Lacinho
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/moda-praia/Calcinha%20Inteira?PS=12&amp;map=c,specificationFilter_37">
+                                    <span class="e-icon-inteira"></span>
+                                    Inteira
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/moda-praia/Cropped?PS=12&amp;map=c,specificationFilter_37">
+                                    <span class="e-icon-cropped"></span>
+                                    Cropped
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/moda-praia/Cortininha?PS=12&amp;map=c,specificationFilter_37">
+                                    <span class="e-icon-cortininha"></span>
+                                    Cortininha
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/moda-praia/Calcinha%20Semi%20Fio?PS=12&amp;map=c,specificationFilter_37">
+                                    <span class="e-icon-semi-fio"></span>
+                                    Semi Fio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/moda-praia/Mai%C3%B4?PS=12&amp;map=c,specificationFilter_37">
+                                    <span class="e-icon-maio"></span>
+                                    Maiô
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <section class="e-not-found-contact">
+                <div class="e-center-content">
+                    <div class="e-left">
+                        <h2>Não encontrou<br />o que estava procurando?</h2>
+                        <p>Conta pra gente, que nossa equipe<br />tentará ajudar você a encontrar<br />o que está buscando.</p>
+                    </div>
+                    <div class="e-right">
+                        <form action="" class="e-form">
+                            <label for="contact_name">
+                                <input type="text" placeholder="Nome:" name="contact_name" id="contact_name" required="true" />
+                            </label>
+                            <label for="contact_email">
+                                <input type="emal" placeholder="E-mail:" name="contact_email" id="contact_email" required="true" />
+                            </label>
+                            <label for="contact_message">
+                                <legend>Mensagem</legend>
+                                <textarea name="contact_message" id="contact_message" cols="30" rows="10" required="true"></textarea>
+                            </label>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <vtex:template id="AdoroMar-Footer-Mobile" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts-Mobile" />
+    <script type="text/javascript" src="/arquivos/adoromar-busca-vazia-mobile.js"></script>
+</body>
+</html>

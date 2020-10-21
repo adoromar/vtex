@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+  <vtex:contentPlaceHolder id="head_tags" />
+  <vtex:template id="AdoroMar-Head" />
+	<vtex:metaTags />	
+	<link href="/arquivos/adoromar-produto.min.css" rel="stylesheet" type="text/css" />
+  <vtex.cmc:productRichSnippets showFacebook="1"  />
+</head>
+<body>
+  <vtex.cmc:productRichSnippets showGoogle="1" /> 
+	<div class="e-general">
+    <vtex:template id="AdoroMar-Header" />
+      <main class="e-content">
+        <section class="e-main-product">
+          <div class="e-breadcrumb">
+            <vtex.cmc:breadCrumb /> 
+          </div>
+
+          <div class="e-product-left">
+            <div class="e-product-image">
+              <vtex.cmc:ProductImage/>
+            </div>
+          </div>
+
+          <div class="e-product-right">
+            <h1 class="e-product-name">
+              <vtex.cmc:productName/> 
+              <a href="javascript:void()" class="e-wishlist js-add-wishlist">Wishlist</a>
+            </h1>
+
+            <div class="e-product-cod">
+              <vtex.cmc:productReference/>    
+            </div>
+
+            <div class="e-product-price">
+              <vtex.cmc:skuPrice/>
+            </div>
+
+						<div class="selectSku">
+              <!-- Kit product 01 -->
+              <div class="kit clearfix">
+                <!-- /infoKit -->
+                <div class="product clearfix">
+                  <!--<h2><vtex.cmc:productName productIndex="1" /></h2>-->
+                  <!-- /tpl-left -->
+                  <div class="tpl-left">
+                    <!-- /skuSelection -->
+                    <div class="skuSelection e-size clearfix">
+                      <!-- /exibicao de cor -->
+                      <div class="viewImg">
+                        <vtex.cmc:ProductImage productIndex="1" />
+                      </div>
+                      <div class="selectTamanho">
+                        <h3 class="e-title">Selecione o tamanho</h3>
+                        <vtex.cmc:skuSelection changeImage="1" productIndex="1" />
+                      </div>
+                      <div class="dv-buy-button clearfix">
+                        <vtex.cmc:BuyInPage productIndex="1"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Kit product 02 -->
+              <div class="kit clearfix">
+                <!-- /infoKit -->
+                <div class="product clearfix">
+                  <!--<h2><vtex.cmc:productName productIndex="2" /></h2>-->
+                  <!-- /tpl-left -->
+                  <div class="tpl-left">
+                    <!-- /skuSelection -->
+                    <div class="skuSelection e-size clearfix">
+                      <!-- /exibicao de cor -->
+                      <div class="viewImg">
+                        <vtex.cmc:ProductImage productIndex="2" />
+                      </div>
+                      <div class="selectTamanho">
+                        <h3 class="e-title">Selecione o tamanho</h3>
+                        <vtex.cmc:skuSelection changeImage="1" productIndex="2" />
+                      </div>
+                      <div class="dv-buy-button clearfix">
+                        <vtex.cmc:BuyInPage productIndex="2"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Kit product 03 -->
+              <div class="kit clearfix">
+                <!-- /infoKit -->
+                <div class="product clearfix">
+                  <!--<h2><vtex.cmc:productName productIndex="1" /></h2>-->
+                  <!-- /tpl-left -->
+                  <div class="tpl-left">
+                    <!-- /skuSelection -->
+                    <div class="skuSelection e-size clearfix">
+                      <!-- /exibicao de cor -->
+                      <div class="viewImg">
+                        <vtex.cmc:ProductImage productIndex="3" />
+                      </div>
+                      <div class="selectTamanho">
+                        <h3 class="e-title">Selecione o tamanho</h3>
+                        <vtex.cmc:skuSelection changeImage="1" productIndex="3" />
+                      </div>
+                      <div class="dv-buy-button clearfix">
+                        <vtex.cmc:BuyInPage productIndex="3"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               <!-- Kit product 04 -->
+              <div class="kit clearfix">
+                <!-- /infoKit -->
+                <div class="product clearfix">
+                  <!--<h2><vtex.cmc:productName productIndex="1" /></h2>-->
+                  <!-- /tpl-left -->
+                  <div class="tpl-left">
+                    <!-- /skuSelection -->
+                    <div class="skuSelection e-size clearfix">
+                      <!-- /exibicao de cor -->
+                      <div class="viewImg">
+                        <vtex.cmc:ProductImage productIndex="4" />
+                      </div>
+                      <div class="selectTamanho">
+                        <h3 class="e-title">Selecione o tamanho</h3>
+                        <vtex.cmc:skuSelection changeImage="1" productIndex="4" />
+                      </div>
+                      <div class="dv-buy-button clearfix">
+                        <vtex.cmc:BuyInPage productIndex="4"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+						<div class="e-product-buy">
+                <vtex.cmc:BuyButton/>
+            </div>
+
+						<div class="e-product-share">
+                <span>Compartilhe</span>
+                <ul>
+                    <li><a href="#" class="e-face"></a></li>
+                    <li><a href="#" class="e-whats"></a></li>
+                </ul>
+            </div>
+
+            <div class="calcular-entrega">
+                <div class="title">
+                    <i class="fa fa-truck"></i>
+                    Calcule a entrega
+                </div>
+                <div class="conteudo">
+                    <vtex.cmc:shippingValue/>
+                </div>
+            </div>
+					</div>
+        </section>
+		    <section class="e-description">
+            <h3 class="e-title">Descrição</h3>
+            <vtex.cmc:ProductDescription/>
+        </section>
+        <section class="e-vitrine">
+          <div class="e-center-content">
+              <header class="e-section-header">
+                  <h2>Você também vai gostar</h2>
+              </header>
+              <div class="e-product-list">
+                  <vtex:contentPlaceHolder id="Voce Tambem vai Gostar" />
+              </div>
+          </div>
+      </section>
+    </main>
+    <vtex:template id="AdoroMar-Footer" />
+  </div>
+  <vtex:template id="AdoroMar-Scripts" />
+  <script type="text/javascript" src="/arquivos/adoromar-produto-common.min.js"></script>
+  <script type="text/javascript" src="/arquivos/adoromar-produto.min.js"></script>
+</body>
+</html>

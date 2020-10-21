@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head-Mobile" />
+    <link href="/arquivos/adoromar-account-mobile.css" rel="stylesheet" type="text/css" />
+    
+<meta name="yAccount" content="adoromar"/>
+<script src="https://meuspedidos.yami.com.br/returnmanager.min.js" type="text/javascript"></script>     
+    
+</head>
+
+
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header-Mobile" />
+        <main class="e-content">
+            <article class="e-top e-fw">
+                <h3 class="e-big-text e-fw">
+                    Minha Conta
+                </h3>
+                <nav class="e-navigation">
+                    <vtex:contentPlaceHolder id="Nav-main" />
+                </nav>
+            </article>
+            <div class="e-group-data e-fw">
+                <div class="e-orders-list">
+                    <vtex.cmc:orderList/>
+                </div>
+              </div>
+        </main>
+        <vtex:template id="AdoroMar-Footer-Mobile" />
+    </div>
+
+    <vtex:template id="AdoroMar-Scripts-Mobile" />
+    <script type="text/javascript" src="/arquivos/adoromar-account-mobile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head" />
+    <link href="/arquivos/adoromar-categoria.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header" />
+        <main class="e-content">
+
+            <header class="e-title">
+                <div class="e-center-content">
+                    <vtex.cmc:searchTitle />
+                </div>
+            </header>
+
+            <section class="e-top">
+                <div class="e-center-content">
+                    <div class="e-breadcrumbs">
+                        <vtex.cmc:breadCrumb />
+                    </div>
+                    <div class="e-order-by">
+                        <span class="e-order-by-title">Ordenar Por</span>
+                        <ul>
+                            <li><a href="&amp;O=OrderByTopSaleDESC">Mais Vendidos</a></li>
+                            <li><a href="&amp;O=OrderByReleaseDateDESC">Lançamentos</a></li>
+                            <li><a href="&amp;O=OrderByPriceDESC">Maior Preço</a></li>
+                            <li><a href="&amp;O=OrderByPriceASC">Menor Preço</a></li>
+                        </ul>
+                    </div>  
+                </div>  
+            </section>
+
+            <section class="e-main-content">
+                <div class="e-center-content">
+                    <aside class="e-sidebar">
+                        <div class="e-filters">
+                            <div class="e-title">
+                                <h3>Filtrar Por</h3>
+                            </div>
+                            <div class="e-filters-content">
+                                <vtex.cmc:searchNavigator/>
+                            </div>
+                        </div>    
+                        <div class="e-product-list">
+                            <header>
+                                <h3>Mais Desejados</h3>
+                            </header>
+                            <div class="e-carousel">
+                                <vtex:contentPlaceHolder id="Vitrine-Populares" />
+                            </div>   
+                        </div> 
+                    </aside>
+                    <div class="e-products">
+                        <div class="e-product-list">
+                            <vtex.cmc:searchResult layout="c73608ab-bb8d-4a5c-8a4f-af8e8180debc" itemCount="12" columnCount="12" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <vtex:template id="AdoroMar-Footer" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts" />
+    <script type="text/javascript" src="/arquivos/adoromar-categoria.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head-Mobile" />
+    <link href="/arquivos/adoromar-categoria-mobile.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header-Mobile" />
+        <main class="e-content">
+
+            <section class="e-title">
+                <vtex.cmc:searchTitle />
+            </section>
+
+            <section class="e-filters">
+                <span class="e-filter-title">Filtrar por</span>
+                <div class="e-filters-content">
+                    <div class="e-top">
+                        <div class="e-title">
+                            <span>Filtrar por</span>
+                            <div class="e-close"></div>
+                        </div>
+                    </div>
+                    <div class="e-bottom">
+                        <vtex.cmc:searchNavigator />
+                    </div>    
+                </div>
+                <span class="e-order-by">Ordenar por</span>
+                <div class="e-order-by-content">
+                    <div class="e-top">
+                        <div class="e-title">
+                            <span>Filtrar por</span>
+                            <div class="e-close"></div>
+                        </div>
+                    </div>
+                    <div class="e-bottom">
+                        <ul>
+                            <li><a href="&amp;O=OrderByPriceASC">Menor Preço</a></li>
+                            <li><a href="&amp;O=OrderByPriceDESC">Maior Preço</a></li>
+                            <li><a href="&amp;O=OrderByTopSaleDESC">Mais vendidos</a></li>
+                            <li><a href="&amp;O=OrderByNameASC">A - Z</a></li>
+                            <li><a href="&amp;O=OrderByNameDESC">Z - A</a></li>
+                            <li><a href="&amp;O=OrderByReleaseDateDESC">Data de lançamento</a></li>
+                            <li><a href="&amp;O=OrderByBestDiscountDESC">Melhor Desconto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="e-vitrine">
+                <div class="e-product-list">
+                    <vtex.cmc:searchResult layout="c73608ab-bb8d-4a5c-8a4f-af8e8180debc" itemCount="12" columnCount="12" />
+                </div>
+            </section>
+
+            <section class="e-mais-vendidos">
+                <div class="e-product-list">
+                    <header>
+                        <h2>Mais Vendidos</h2>
+                    </header>
+                    <div class="e-carousel">
+                        <vtex:contentPlaceHolder id="Vitrine-Vendidos" />
+                    </div>   
+                </div>
+            </section>
+            
+            <section class="e-category-description">
+                <vtex:contentPlaceHolder id="Descricao-Categoria" />
+            </section>
+
+        </main>
+        <vtex:template id="AdoroMar-Footer-Mobile" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts-Mobile" />
+    <script type="text/javascript" src="/arquivos/adoromar-categoria-mobile.js"></script>
+</body>
+
+</html>

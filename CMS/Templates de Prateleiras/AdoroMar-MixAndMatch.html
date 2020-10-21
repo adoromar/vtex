@@ -1,0 +1,28 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+    
+#if ($product.IsInStock)
+    <div class="e-product">
+    #else
+        <div class="e-product e-indisponivel">
+    #end
+        
+            <input type="hidden" class="e-id" value="$id" />
+    
+            <div class="e-image">
+                <a title="$escapedName" href="$uri">$product.GetImageTag(500,500)</a>
+            </div>
+            
+        
+            #if ($product.IsInStock)
+                <div class="e-price" style="display: none;">
+                     $product.BestPrice
+                </div>
+            #else
+                
+            #end
+       
+      
+    </div>

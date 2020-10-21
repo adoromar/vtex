@@ -1,0 +1,75 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+    
+#if ($product.IsInStock)
+    <div class="e-product">
+#else
+    <div class="e-product e-indisponivel">
+#end
+    
+        <input type="hidden" class="e-id" value="$id" />
+        
+        <a href="$uri" style="display: none;">
+            <div class="e-flag" style="display: none;">
+                <div class="e-flag__discount">$product.HightLight $product.DiscountHightLight</div>
+            </div>
+        </a><!-- Flags -->
+        
+        <div class="e-wishlist">
+            <span class="e-wishlist-icon"></span>
+        </div>
+        
+        <div class="e-image">
+            <a title="$escapedName" href="$uri">$product.GetImageTag(30)</a>
+            <span class="e-image-hover">
+                <a title="$escapedName" href="$uri">$product.GetImageTag(30, "costas")</a>
+            </span>
+        </div>
+
+        <header>
+            <h2><a title="$escapedName" href="$uri"> $product.Name </a></h2>
+        </header>
+        <!-- Inicio Yourviews -->
+           <!-- Estrelas que carregam a nota do produto nas prateleiras, de preferência manter próximo ao nome do produto  -->
+           <div class="yv-review-quickreview" value="$product.Id"></div>
+        <!-- Final Yourviews -->
+        <div class="e-group">
+          
+            #if ($product.IsInStock)
+                <div class="e-price">
+                    
+                    #if ($product.HasBestPrice)
+                            <span class="e-oldPrice">
+                                de <span>$product.ListPrice</span>
+                            </span> 
+                            
+                            #if ($product.NumbersOfInstallment > 1)
+                            <span class="e-installment" style="display: none;">
+                                ${product.NumbersOfInstallment}X de $product.InstallmentValue
+                            </span>
+                            
+                            #else
+                            
+                            <span class="e-bestPrice-installment">
+                                 $product.BestPrice
+                            </span>
+                            
+                            #end
+                            
+                            <span class="e-bestPrice">
+                                 $product.BestPrice
+                            </span>
+                        #else
+                            <span class="e-uniquePrice">
+                                $product.BestPrice
+                            </span>
+                    #end
+
+                </div>
+            #else
+                <div class="e-outOfStock">Produto Esgotado</div>
+            #end
+        </div>
+    </div>

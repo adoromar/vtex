@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+  <vtex:metaTags/>
+  <vtex:template id="AdoroMar-Head" />
+  <link href="/arquivos/adoromar-account.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="e-general">
+    <vtex:template id="AdoroMar-Header" />
+    <main class="e-content">
+      <div class="e-group-content">
+        <div class="e-group-aside">
+          <div class="e-title">Minha conta</div>
+          <ul>
+            <li><a href="/account">Meu perfil</a></li>
+            <li><a href="/account/orders">Meus Pedidos</a></li>
+            <li class="e-active"><a href="/account/wishlist">Lista de desejos</a></li>
+          </ul>
+        </div>
+        <div class="e-group-data">
+          <div class="e-wishlist-list">
+            <div class="e-vitrine">
+              <div class="e-product-list" id="e-get-products">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <vtex:template id="AdoroMar-Footer" />
+  </div>
+  <vtex:template id="AdoroMar-Scripts" />
+  <script type="text/javascript" src="/arquivos/adoromar-account.js"></script>
+</body>
+</html>

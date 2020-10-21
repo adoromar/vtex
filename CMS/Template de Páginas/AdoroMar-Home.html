@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head" />
+    <link href="/arquivos/adoromar-home.min.css" rel="stylesheet" type="text/css" />
+    
+<meta name="B-verify" content="fa6c84ce2b625283de3798109ca6b691cb947770" />    
+    
+</head>
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header" />
+        <main class="e-content">
+
+            <section class="e-main-banner">
+                <div class="e-center-content">
+                    <div class="e-carousel">
+                        <vtex:contentPlaceHolder id="Banner-Principal" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="e-segment-buy">
+                <div class="e-center-content">
+                    <header class="e-section-header">
+                        <h2>Compre por Modelo</h2>
+                    </header>
+                    <vtex.cmc:Segmento />
+                </div>
+            </section>
+
+            <section class="e-estampa-buy">
+                <div class="e-center-content">
+                    <header class="e-section-header">
+                        <h2>Ou Escolha por Estampa</h2>
+                    </header>
+                    <div class="e-carousel">
+                        <vtex:contentPlaceHolder id="Banners-Estampa" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="e-lancamentos">
+                <div class="e-center-content">
+                    <header class="e-section-header">
+                        <h2>Lançamentos</h2>
+                    </header>
+                    <div class="e-product-list">
+                        <vtex:contentPlaceHolder id="Vitrine-Lançamentos" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="e-lancamentos">
+                <div class="e-center-content">
+                    <header class="e-section-header">
+                        <h2>Mais desejados</h2>
+                    </header>
+                    <div class="e-product-list">
+                        <vtex:contentPlaceHolder id="Vitrine-Lançamentos-Bottom" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="e-promocional-banners">
+                <div class="e-center-content">
+                    <div class="e-left">
+                        <vtex:contentPlaceHolder id="Banner-Promocional-Esquerda" />
+                    </div>
+                    <div class="e-right">
+                        <div class="e-top">
+                            <vtex:contentPlaceHolder id="Banner-Promocional-Topo" />
+                        </div>
+                        <div class="e-bottom">
+                            <vtex:contentPlaceHolder id="Banner-Promocional-Inferior" />
+                        </div>
+                    </div>
+                </div>    
+            </section>
+
+            <section class="e-main-instagram">
+                <div class="e-center-content">
+                    <header class="e-section-header">
+                        <h2><span class="e-icon-instagram"></span> Instagram <a href="https://www.instagram.com/ADOROMARBR/" target="_blank">@AdoromarBr</a></h2>
+                    </header>
+                    <div class="e-instagram-content">
+                        <div class="e-insta-banner">
+                            <vtex:contentPlaceHolder id="Banner-Instagram" />
+                        </div>
+                        <div id="instafeed">
+                            <div class="e-insta-photo"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="e-main-copy">
+                <div class="e-center-content">
+                    <p><strong>Loja online de Biquínis e produtos para sua viagem - Verão 2017 / 2018</strong></p>
+                    <p>Aqui na Adoro Mar proporcionamos praticidade e bem estar na compra de produtos Moda praia e itens essenciais a sua viagem =)</p>
+                    <p>Sempre focando no melhor custo/benefício na compra, seja ela um Biquíni de lacinho, Biquíni com Calcinha Inteira, Maiô ou Body, Conjunto de Cropped, ou os produtos com calcinha Semi Fio que são lindas no corpo e valorizam muito.</p>
+                    <p>Temos uma diversidade de produtos, cangas e canga toalha, relógios, organizadores de viagem, entre outros. Sempre pensando naqueles melhores momentos de descanso e diversão que tanto merecemos.</p>
+                    <p>Faremos de tudo para que tenha uma excelente experiência conosco, focamos muito na qualidade dos produtos, nos comprometemos em que fique satisfeita com a compra, nossa empresa preza pelo Respeito e Fidelidade.</p>
+                    <p>Então aproveite HOJE, e adquira um desses lindos produtos na nossa loja online, toda desenvolvida pra você. </p>
+                    <p>Estamos prontos para lhe atender e oferecer o melhor.</p>
+                    <p>Have Fun!!</p>
+                </div>
+            </section>
+            <!-- Inicio Yourviews -->
+            <!-- Depoimentos dos clientes sobre a loja  -->
+            <div class="yv-testimonial" data-qty="9"></div>
+            <!-- Final Yourviews -->
+   
+        </main>
+        <vtex:template id="AdoroMar-Footer" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts" />
+    <script type="text/javascript" src="/arquivos/instafeed.js"></script>
+    <script type="text/javascript" src="/arquivos/adoromar-home.js"></script>
+</body>
+</html>

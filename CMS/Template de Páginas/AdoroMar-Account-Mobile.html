@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head-Mobile" />
+    <link href="/arquivos/adoromar-account-mobile.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header-Mobile" />
+        <main class="e-content">
+            <article class="e-top e-fw">
+                <h3 class="e-big-text e-fw">
+                    Minha Conta
+                </h3>
+                <nav class="e-navigation">
+                    <vtex:contentPlaceHolder id="Nav-main" />
+                </nav>
+            </article>
+            <div class="e-account e-fw">
+                <div class="e-account__container">
+                    <div class="e-account__profile">
+                        <vtex.cmc:accountUserProfile />
+                    </div>
+                    <div class="e-account__address">
+                        <vtex.cmc:accountAddress/>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <vtex:template id="AdoroMar-Footer-Mobile" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts-Mobile" />
+    <script type="text/javascript" src="/arquivos/adoromar-account-mobile.js"></script>
+</body>
+</html>

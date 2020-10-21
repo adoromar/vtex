@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head-Mobile" />
+    <link href="/arquivos/adoromar-account-mobile.css" rel="stylesheet" type="text/css" />
+    <link href="/arquivos/adoromar-wishlist-mobile.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="e-general">
+    <vtex:template id="AdoroMar-Header-Mobile" />
+        <main class="e-content">
+            <article class="e-top e-fw">
+                <h3 class="e-big-text e-fw">
+                    Wishlist
+                </h3>
+                <nav class="e-navigation">
+                    <vtex:contentPlaceHolder id="Nav-main" />
+                </nav>
+            </article>
+            
+            <section class="e-wishlist__option-view e-fw">
+                <span class="e-view-one js--wishlist-category-view">
+                    <span></span>
+                </span>
+                <span class="e-view-two js--wishlist-category-view is--active">
+                    <span></span>
+                    <span></span>
+                </span>
+            </section>
+
+            <div class="e-group-data">
+                <div class="e-wishlist-list">
+                    <div class="e-vitrine">
+                        <div class="e-product-list" id="e-get-products">
+
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </main>
+
+        <vtex:template id="AdoroMar-Footer-Mobile" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts-Mobile" />
+    <script type="text/javascript" src="/arquivos/adoromar-account-mobile.js"></script>
+</body>
+</html>

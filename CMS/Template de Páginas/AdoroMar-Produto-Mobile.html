@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+    <vtex:metaTags/>
+    <vtex:template id="AdoroMar-Head-Mobile" />
+    <link href="/arquivos/adoromar-produto-mobile.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="e-general">
+        <vtex:template id="AdoroMar-Header-Mobile" />
+        <main class="e-content">
+
+            <section class="e-main-product">
+                <div class="e-product-top">
+                    <div class="e-product-image">
+                        <vtex.cmc:ProductImage/>
+                    </div>
+                </div>
+
+                <div class="e-product-bottom">
+                    <h1 class="e-product-name">
+                        <vtex.cmc:productName/> 
+                    </h1>
+
+                    <div class="e-product-cod">
+                        <vtex.cmc:productReference/>    
+                    </div>
+
+                    <div class="e-product-price">
+                        <vtex.cmc:skuPrice/>
+                    </div>
+
+                    <div class="e-product-similares">
+                        <vtex:contentPlaceHolder id="Produtos Similares" />
+                    </div>
+
+                    <div class="e-product-variations">
+                        <div class="e-size">
+                            <h3 class="e-title">Selecione o Tamanho</h3>
+                            <vtex.cmc:skuSelection />
+                        </div>
+                    </div>
+
+                    <div class="e-product-size-guide">
+                        <span class="e-link">Guia de tamanho</span>
+                        <div class="e-product-size-guide-content">
+                            <vtex.cmc:stockKeepingUnitMeasures/>
+                        </div>
+                    </div>
+
+                    <div class="e-product-buy">
+                        <vtex.cmc:BuyButton/>
+                    </div>
+
+                    <div class="e-product-share">
+                        <span>Compartilhe</span>
+                        <ul>
+                            <li><a href="#" class="e-email"></a></li>
+                            <li><a href="#" class="e-face"></a></li>
+                            <li><a href="#" class="e-whats"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <div class="e-buytogether">
+                <h4 class="e-buytogether-title">Compre junto</h4>
+                <ul>
+                    <li class="e-item e-item-product eq-0">
+                        <span class="e-msg-select-size">Selecione um tamanho</span>
+                    </li>
+                    <li class="e-item e-item-compare e-compare-more">
+                        <span class="e-compare">+</span>
+                    </li>
+                    <li class="e-item e-item-product eq-1">
+                        <vtex:contentPlaceHolder id="Produto Compre Junto" />
+                        <span class="e-msg-select-size">Selecione um tamanho</span>
+                    </li>
+                    <li class="e-item e-item-compare e-compare-equal">
+                        <span class="e-compare">=</span>
+                    </li>
+                    <li class="e-item e-item-buy">
+                        <h4 class="e-title-total">Total:</h4>
+                        <h5 class="e-price-total"></h5>
+                        <a  class="e-btn-buy" href="#">Comprar os dois</a>
+                    </li>
+                </ul>
+            </div>
+
+            <section class="e-description">
+                <h3 class="e-title">Descrição</h3>
+                <vtex.cmc:ProductDescription/>
+            </section>
+
+            <section class="e-vitrine">
+                <h3 class="e-title">Você também vai gostar</h3>
+                <div class="e-product-list">
+                    <vtex:contentPlaceHolder id="Voce Tambem vai Gostar" />
+                </div>
+            </section>
+
+            <div class="e-popup-guide-size" style="display: none">
+                <div class="e-popup-guide-size__overlay"></div>
+                <div class="e-popup-guide-size__content">
+                    <button class="e-popup-guide-size__content--close">x</button>
+                    <div class="e-popup-guide-size__content--header">
+                        <h2>Tabela de medidas</h2>
+                    </div>
+                    <div class="e-popup-guide-size__content--body">
+                        <h3>Para BIQUÍNIS:</h3>
+                        <p>Para biquínis vamos ter referência com numeração que usa de Sutiã e de Calça para saber os tamanhos dos Tops e Calcinha</p>
+                        
+                        <div class="e-table-guide-size">
+                            <div class="e-table e-table-sutia">
+                                <h4>Tam. do Sutiã</h4>
+                                <table>
+                                    <tr>
+                                        <td>P</td>
+                                        <td>40</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M</td>
+                                        <td>42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>G</td>
+                                        <td>44 - 46</td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="e-table e-table-sutia">
+                                <h4>Tam. da Calcinha</h4>
+                                <table>
+                                    <tr>
+                                        <td>P</td>
+                                        <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td>M</td>
+                                        <td>38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>G</td>
+                                        <td>40 - 42</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <vtex:template id="AdoroMar-Footer-Mobile" />
+    </div>
+    <vtex:template id="AdoroMar-Scripts-Mobile" />
+    <script type="text/javascript" src="/arquivos/adoromar-produto-common.min.js"></script>
+    <script type="text/javascript" src="/arquivos/adoromar-produto-mobile.min.js"></script>
+</body>
+</html>

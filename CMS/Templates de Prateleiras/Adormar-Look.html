@@ -1,0 +1,39 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($escapedName = $product.HtmlEscapedName)
+    
+#if ($product.IsInStock)
+    <div class="e-product">
+#else
+    <div class="e-product e-indisponivel">
+#end
+    
+        <input type="hidden" class="e-id" value="$id" />
+        
+        <div class="e-image">
+            <a title="$escapedName" href="$uri">$product.GetImageTag(30)</a>
+        </div>
+
+
+        <h2> $product.Name</h2>
+        
+        <div class="e-group">
+          
+            #if ($product.IsInStock)
+                <div class="e-price">
+                    #if ($product.HasBestPrice)
+                            $product.BestPrice
+                        #else
+                            $product.BestPrice
+                    #end
+                </div>
+                <div class="e-variations">
+                    <span>Selecione o tamanho</span>
+                    <ul></ul>
+                </div>
+            #else
+                <div class="e-outOfStock">Produto Esgotado</div>
+            #end
+        </div>
+    </div>
